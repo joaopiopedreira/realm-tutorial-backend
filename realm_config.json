@@ -1,6 +1,7 @@
 {
     "config_version": 20210101,
+    "app_id": "tasktracker-korre",
     "name": "tasktracker",
-    "location": "US-VA",
-    "deployment_model": "GLOBAL"
+    "location": "IE",
+    "deployment_model": "LOCAL"
 }
