@@ -1,5 +1,5 @@
 exports = async function(email) {
-  // control comment II
+  // control comment III
   const collection = context.services.get("mongodb-atlas").db("tracker").collection("User");
   const filter = {name: email};
   const newMember = await collection.findOne(filter);
