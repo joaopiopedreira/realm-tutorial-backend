@@ -1,4 +1,5 @@
 exports = async function(email) {
+  // control comment
   const collection = context.services.get("mongodb-atlas").db("tracker").collection("User");
   const filter = {name: email};
   const newMember = await collection.findOne(filter);
@@ -6,11 +7,11 @@ exports = async function(email) {
     return {error: `User ${email} not found`};
   }
   const callingUser = context.user;
-  
+
   if (newMember._id === callingUser.id) {
     return {error: "You are already on your own team!"};
   }
-  
+
   const projectPartition = `project=${callingUser.id}`;
 
   if (newMember.canWritePartitions && newMember.canWritePartitions.includes(projectPartition)) {
