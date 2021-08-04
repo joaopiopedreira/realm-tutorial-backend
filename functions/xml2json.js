@@ -1,7 +1,7 @@
 exports = async function(data){
+  const xml2js = require("xml2js");
   
   try {  
-    const xml2js = require("xml2js");
     // Try to catch here empty bodies. It's not easy since when a body is really empty,
     // the "body" obj gets the query parameters attached (example: undefinedreset=false)
     if (data && data.indexOf('<') > -1) {
