@@ -2,8 +2,6 @@
 exports = async function(payload, response) {
     
     const Tasks = context.services.get("mongodb-atlas").db("tracker").collection("Task");
-    //const doc = await Tasks.findOne();
-    //console.log(doc);
     
 
     // Query params, e.g. '?arg1=hello&arg2=world' => {arg1: "hello", arg2: "world"}
@@ -21,5 +19,7 @@ exports = async function(payload, response) {
     const jsonDoc = await context.functions.execute("xml2json", body);
     console.log(jsonDoc);
 
-    return  jsonDoc;
+    await Tasks.insertOne(jsonDoc);
+
+    return 'task inserted';
 };

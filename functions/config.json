@@ -1,8 +1,8 @@
 [
     {
-        "name": "resetFunc",
-        "private": false,
-        "can_evaluate": {}
+        "name": "xml2json",
+        "private": true,
+        "run_as_system": true
     },
     {
         "name": "canWritePartition",
@@ -15,12 +15,17 @@
         "can_evaluate": {}
     },
     {
-        "name": "json2xml",
-        "private": true,
+        "name": "resetFunc",
+        "private": false,
+        "can_evaluate": {}
+    },
+    {
+        "name": "addTeamMember",
+        "private": false,
         "run_as_system": true
     },
     {
-        "name": "xml2json",
+        "name": "json2xml",
         "private": true,
         "run_as_system": true
     },
@@ -31,11 +36,6 @@
     },
     {
         "name": "removeTeamMember",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "addTeamMember",
         "private": false,
         "run_as_system": true
     },
