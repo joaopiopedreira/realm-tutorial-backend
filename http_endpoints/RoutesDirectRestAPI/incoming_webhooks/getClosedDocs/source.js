@@ -18,6 +18,8 @@ exports = async function(payload, response) {
     console.log("arg1, arg2: ", arg1, arg2);
     console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", body);
-
-    return  await context.functions.execute("json2xml", doc);
+    
+    response.setStatusCode(200);
+    response.setBody(await context.functions.execute("json2xml", doc));
+    //return  await context.functions.execute("json2xml", doc);
 };
