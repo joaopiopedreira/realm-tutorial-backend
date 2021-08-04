@@ -1,22 +1,12 @@
 [
     {
-        "name": "xml2json",
-        "private": true,
-        "run_as_system": true
-    },
-    {
-        "name": "addTeamMember",
-        "private": false,
-        "run_as_system": true
-    },
-    {
         "name": "resetFunc",
         "private": false,
         "can_evaluate": {}
     },
     {
-        "name": "json2xml",
-        "private": true,
+        "name": "canWritePartition",
+        "private": false,
         "run_as_system": true
     },
     {
@@ -25,22 +15,32 @@
         "can_evaluate": {}
     },
     {
+        "name": "json2xml",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "xml2json",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "getMyTeamMembers",
+        "private": false,
+        "run_as_system": true
+    },
+    {
         "name": "removeTeamMember",
         "private": false,
         "run_as_system": true
     },
     {
+        "name": "addTeamMember",
+        "private": false,
+        "run_as_system": true
+    },
+    {
         "name": "canReadPartition",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "canWritePartition",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "getMyTeamMembers",
         "private": false,
         "run_as_system": true
     }
