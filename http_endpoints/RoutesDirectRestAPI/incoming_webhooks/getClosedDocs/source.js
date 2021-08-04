@@ -19,8 +19,5 @@ exports = async function(payload, response) {
     console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", body);
     
-    response.setStatusCode(200);
-    response.setHeaders({"Content-Type": ["application/json"]});
-    response.setBody(await context.functions.execute("json2xml", doc));
     return  await context.functions.execute("json2xml", doc);
 };

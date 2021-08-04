@@ -1,5 +1,35 @@
 [
     {
+        "name": "addTeamMember",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "createNewUserDocument",
+        "private": true,
+        "can_evaluate": {}
+    },
+    {
+        "name": "json2xml",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "resetFunc",
+        "private": false,
+        "can_evaluate": {}
+    },
+    {
+        "name": "getMyTeamMembers",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "canReadPartition",
+        "private": false,
+        "run_as_system": true
+    },
+    {
         "name": "removeTeamMember",
         "private": false,
         "run_as_system": true
@@ -10,38 +40,8 @@
         "run_as_system": true
     },
     {
-        "name": "json2xml",
-        "private": true,
-        "run_as_system": true
-    },
-    {
-        "name": "getMyTeamMembers",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "addTeamMember",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "canReadPartition",
-        "private": false,
-        "run_as_system": true
-    },
-    {
         "name": "canWritePartition",
         "private": false,
         "run_as_system": true
-    },
-    {
-        "name": "createNewUserDocument",
-        "private": true,
-        "can_evaluate": {}
-    },
-    {
-        "name": "resetFunc",
-        "private": false,
-        "can_evaluate": {}
     }
 ]
