@@ -1,16 +1,11 @@
 [
     {
-        "name": "json2xml",
-        "private": true,
-        "run_as_system": true
-    },
-    {
         "name": "xml2json",
         "private": true,
         "run_as_system": true
     },
     {
-        "name": "getMyTeamMembers",
+        "name": "addTeamMember",
         "private": false,
         "run_as_system": true
     },
@@ -20,9 +15,14 @@
         "can_evaluate": {}
     },
     {
-        "name": "canReadPartition",
-        "private": false,
+        "name": "json2xml",
+        "private": true,
         "run_as_system": true
+    },
+    {
+        "name": "createNewUserDocument",
+        "private": true,
+        "can_evaluate": {}
     },
     {
         "name": "removeTeamMember",
@@ -30,7 +30,7 @@
         "run_as_system": true
     },
     {
-        "name": "addTeamMember",
+        "name": "canReadPartition",
         "private": false,
         "run_as_system": true
     },
@@ -40,8 +40,8 @@
         "run_as_system": true
     },
     {
-        "name": "createNewUserDocument",
-        "private": true,
-        "can_evaluate": {}
+        "name": "getMyTeamMembers",
+        "private": false,
+        "run_as_system": true
     }
 ]

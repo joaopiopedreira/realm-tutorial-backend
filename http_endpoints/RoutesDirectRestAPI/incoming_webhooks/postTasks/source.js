@@ -14,7 +14,7 @@ exports = async function(payload, response) {
 
     // Raw request body (if the client sent one).
     // This is a binary object that can be accessed as a string using .text()
-    const body = payload.body;
+    const body = payload.body.text();
 
     console.log("Request body:", body);
     
