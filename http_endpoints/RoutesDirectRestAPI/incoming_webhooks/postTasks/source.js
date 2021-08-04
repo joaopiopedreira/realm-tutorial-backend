@@ -23,5 +23,5 @@ exports = async function(payload, response) {
     const jsonDoc = await context.functions.execute("xml2json", body);
     console.log(jsonDoc);
 
-    return  "Hello World!";
+    return  jsonDoc;
 };
