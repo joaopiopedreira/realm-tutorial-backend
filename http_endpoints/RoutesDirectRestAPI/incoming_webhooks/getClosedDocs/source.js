@@ -22,5 +22,5 @@ exports = async function(payload, response) {
     response.setStatusCode(200);
     response.setHeaders({"Content-Type:":"application/xml"});
     response.setBody(await context.functions.execute("json2xml", doc));
-    //return  await context.functions.execute("json2xml", doc);
+    return  await context.functions.execute("json2xml", doc);
 };
