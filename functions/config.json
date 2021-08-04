@@ -1,5 +1,15 @@
 [
     {
+        "name": "getMyTeamMembers",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "json2xml",
+        "private": true,
+        "run_as_system": true
+    },
+    {
         "name": "removeTeamMember",
         "private": false,
         "run_as_system": true
@@ -30,12 +40,7 @@
         "can_evaluate": {}
     },
     {
-        "name": "getMyTeamMembers",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "json2xml",
+        "name": "xml2json",
         "private": true,
         "run_as_system": true
     }
