@@ -15,17 +15,12 @@
         "run_as_system": true
     },
     {
-        "name": "canWritePartition",
+        "name": "getMyTeamMembers",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "createNewUserDocument",
-        "private": true,
-        "can_evaluate": {}
-    },
-    {
-        "name": "getMyTeamMembers",
+        "name": "addTeamMember",
         "private": false,
         "run_as_system": true
     },
@@ -35,9 +30,14 @@
         "run_as_system": true
     },
     {
-        "name": "addTeamMember",
+        "name": "canWritePartition",
         "private": false,
         "run_as_system": true
+    },
+    {
+        "name": "createNewUserDocument",
+        "private": true,
+        "can_evaluate": {}
     },
     {
         "name": "resetFunc",
