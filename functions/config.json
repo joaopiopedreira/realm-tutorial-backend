@@ -1,5 +1,15 @@
 [
     {
+        "name": "canWritePartition",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "createNewUserDocument",
+        "private": true,
+        "can_evaluate": {}
+    },
+    {
         "name": "getMyTeamMembers",
         "private": false,
         "run_as_system": true
@@ -23,15 +33,5 @@
         "name": "canReadPartition",
         "private": false,
         "run_as_system": true
-    },
-    {
-        "name": "canWritePartition",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "createNewUserDocument",
-        "private": true,
-        "can_evaluate": {}
     }
 ]
