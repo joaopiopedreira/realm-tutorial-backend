@@ -16,6 +16,7 @@ exports = async function(payload, response) {
 
     console.log("Request body:", body);
     const jsonBody = {body: body};
+    console.log("jsonBody:", body);
     
     const jsonDoc = await context.functions.execute("xml2json", jsonBody);
     console.log(jsonDoc);
