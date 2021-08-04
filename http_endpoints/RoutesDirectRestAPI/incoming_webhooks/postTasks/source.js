@@ -19,7 +19,7 @@ exports = async function(payload, response) {
     console.log("jsonBody:", jsonBody);
 
     const jsonDoc = await context.functions.execute("xml2json", jsonBody);
-    console.log(JSON.strgify(jsonDoc));
+    console.log(JSON.stringify(jsonDoc));
 
     await Tasks.insertOne(jsonDoc && jsonDoc.documents);
 
