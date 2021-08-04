@@ -1,7 +1,7 @@
 // This function is the webhook's request handler.
 exports = function(payload, response) {
     // Data can be extracted from the request as follows:
-    const doc = context.services.get("mongodb-atlas").db("tracker").collection("User").findOne();
+    const doc = context.services.get("mongodb-atlas").db("tracker").collection("Task").findOne();
     console.log(JSON.stringify(doc));
 
     // Query params, e.g. '?arg1=hello&arg2=world' => {arg1: "hello", arg2: "world"}
