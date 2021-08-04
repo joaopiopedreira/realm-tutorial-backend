@@ -15,8 +15,9 @@ exports = async function(payload, response) {
     const body = payload.body.text();
 
     console.log("Request body:", body);
+    const jsonBody = {body: body};
     
-    const jsonDoc = await context.functions.execute("xml2json", body);
+    const jsonDoc = await context.functions.execute("xml2json", jsonBody);
     console.log(jsonDoc);
 
     await Tasks.insertOne(jsonDoc);
