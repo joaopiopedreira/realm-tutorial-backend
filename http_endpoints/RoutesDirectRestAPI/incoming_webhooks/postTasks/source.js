@@ -16,8 +16,6 @@ exports = async function(payload, response) {
     // This is a binary object that can be accessed as a string using .text()
     const body = payload.body;
 
-    console.log("arg1, arg2: ", arg1, arg2);
-    console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", body);
     
     const jsonDoc = await context.functions.execute("xml2json", body);
