@@ -1,26 +1,21 @@
 [
     {
-        "name": "canWritePartition",
+        "name": "canReadPartition",
         "private": false,
         "run_as_system": true
     },
     {
-        "name": "addTeamMember",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "createNewUserDocument",
+        "name": "xml2json",
         "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "resetFunc",
+        "private": false,
         "can_evaluate": {}
     },
     {
-        "name": "removeTeamMember",
-        "private": false,
-        "run_as_system": true
-    },
-    {
-        "name": "canReadPartition",
+        "name": "addTeamMember",
         "private": false,
         "run_as_system": true
     },
@@ -35,13 +30,18 @@
         "run_as_system": true
     },
     {
-        "name": "resetFunc",
+        "name": "removeTeamMember",
         "private": false,
-        "can_evaluate": {}
+        "run_as_system": true
     },
     {
-        "name": "xml2json",
-        "private": true,
+        "name": "canWritePartition",
+        "private": false,
         "run_as_system": true
+    },
+    {
+        "name": "createNewUserDocument",
+        "private": true,
+        "can_evaluate": {}
     }
 ]
