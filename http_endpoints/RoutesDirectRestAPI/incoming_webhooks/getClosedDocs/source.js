@@ -19,17 +19,5 @@ exports = async function(payload, response) {
     console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", body);
 
-    // You can use 'context' to interact with other Realm features.
-    // Accessing a value:
-    // var x = context.values.get("value_name");
-
-    // Querying a mongodb service:
-    // const doc = context.services.get("mongodb-atlas").db("dbname").collection("coll_name").findOne();
-
-    // Calling a function:
-    // const result = context.functions.execute("function_name", arg1, arg2);
-
-    // The return value of the function is sent as the response back to the client
-    // when the "Respond with Result" setting is set.
-    return  JSON.stringify(doc);
+    return  await context.functions.execute("json2xml", doc);
 };
