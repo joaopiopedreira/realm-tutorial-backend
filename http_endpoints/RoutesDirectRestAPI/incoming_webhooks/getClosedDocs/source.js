@@ -1,3 +1,7 @@
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(find, 'g'), replace);
+}
+
 // This function is the webhook's request handler.
 exports = async function(payload, response) {
     // Data can be extracted from the request as follows:
@@ -19,5 +23,5 @@ exports = async function(payload, response) {
     console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", body);
     
-    return  await context.functions.execute("json2xml", doc);
+    return  replaceAll(await context.functions.execute("json2xml", doc),'\n','');
 };
